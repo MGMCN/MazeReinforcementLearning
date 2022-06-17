@@ -22,7 +22,7 @@ if __name__ == "__main__":
 ## How to run this demo_code using DQN method
 ```Python
 """
-    Comment code A and B, which represents Reinforcement learning using method DQN. Then run this code in main.py
+    Comment code A and B, which represents Reinforcement learning using method called DQN. Then run this code in main.py
 """
 if __name__ == "__main__":
     maze = Maze(4, 4, 0, 2)
