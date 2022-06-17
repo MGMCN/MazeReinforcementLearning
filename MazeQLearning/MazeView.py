@@ -43,7 +43,6 @@ class MazeView(tk.Tk):
             time.sleep(self.render_time)
         else:
             self.cnt -= 1
-        # print("view cnt->",self.cnt)
         x *= 36
         y *= 36
         x += 8
@@ -57,5 +56,4 @@ if __name__ == "__main__":
     maze = maze.get_maze()
     print(maze)
     mazeview = MazeView(maze)
-    # mazeview.after(100,xxx_func)
     mazeview.mainloop()
