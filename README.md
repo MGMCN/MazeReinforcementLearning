@@ -36,6 +36,6 @@ if __name__ == "__main__":
     view.mainloop()
 ```
 --------------------------------
-# REFERENCE
+# REFERENCES
 [1][莫凡强化学习教程BiliBili](https://www.bilibili.com/video/BV13W411Y75P?p=1&vd_source=7478d53454dfed00538f20c2bfa7123f)  
 [2][ClownW](https://github.com/ClownW/Reinforcement-learning-with-PyTorch/tree/master/content/5_Deep_Q_Network)
