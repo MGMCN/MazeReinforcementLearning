@@ -8,25 +8,11 @@ class Net(nn.Module):
     def __init__(self, input, hidden, output):
         super(Net, self).__init__()
         self.il = nn.Linear(input, hidden)
-        # 目前没激活层 先试试看吧!
-        # self.hl0 = nn.Linear(hidden, hidden)
-        # self.hl1 = nn.Linear(hidden, hidden * 2)
-        # self.hl2 = nn.Linear(hidden * 2, hidden * 2)
-        # self.hl3 = nn.Linear(hidden * 2, hidden)
-        #
         self.ol = nn.Linear(hidden, output)
 
     def forward(self, x):
         x = self.il(x)
-        x = F.relu(x)  # 作用 ？？？
-        # x = self.hl0(x)
-        # x = F.relu(x)
-        # x = self.hl1(x)
-        # x = F.relu(x)
-        # x = self.hl2(x)
-        # x = F.relu(x)
-        # x = self.hl3(x)
-        # x = F.relu(x)
+        x = F.relu(x) # 必须的...
         x = self.ol(x)
         return x
 
