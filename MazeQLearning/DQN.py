@@ -12,7 +12,7 @@ class Net(nn.Module):
 
     def forward(self, x):
         x = self.il(x)
-        x = F.relu(x) # 必须的...
+        x = F.relu(x)
         x = self.ol(x)
         return x
 
